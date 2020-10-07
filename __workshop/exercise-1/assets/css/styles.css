@@ -20,7 +20,37 @@ body {
   min-width: 320px;
 }
 
-.bacon {
+/*FIRST BAND*/
+.dddd {             /*rec background in the pink section*/
+  background: var(--ksu-purple);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: var(--small-band-height);
+}
+
+.believe{        /*top bar text*/
+  color: #fff;
+  top: -50px;
+  font-family: var(--main-font);
+  font-size: 256px;
+  opacity: 0.2;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.cccc {             /*number in the pink section*/
+  color: #fff;
+  font-size: 60px;
+  font-family: var(--main-font);
+}
+
+
+/*SECOND BAND*/
+.bacon {      /*the second band*/
   background: var(--beau-blue);
   position: relative;
   display: flex;
@@ -30,7 +60,7 @@ body {
   z-index: 1;
 }
 
-.bivrip {
+.bivrip {     /*container for the two buttons*/
   margin: 4px;
 }
 
@@ -47,26 +77,15 @@ body {
   transition: all 0.5s;
 }
 
-.believe {
-  color: #fff;
-  top: -50px;
-  font-family: var(--main-font);
-  font-size: 256px;
-  opacity: 0.2;
-  position: absolute;
-  text-align: center;
-  width: 100%;
-  overflow: hidden;
-}
-
-.boom.active,
+.boom.active,     /*boom = button class*/
 .boom:hover {
   background: var(--ksu-purple);
   border-color: transparent;
   color: white;
 }
 
-.what-now {
+/*THIRD BAND*/
+.what-now{       /*container of the third band*/
   min-height: var(--large-band-height);
   display: flex;
   justify-content: center;
@@ -75,7 +94,7 @@ body {
   padding: 32px;
 }
 
-.that {
+.that {     /*container of the 1~10*/
   color: var(--ksu-purple);
   cursor: pointer;
   display: flex;
@@ -90,7 +109,7 @@ body {
 }
 
 .that::before,
-.that::after {
+.that::after {    /*circles of the 1~10*/
   content: "";
   background: var(--lemon-yellow);
   border-radius: 50%;
@@ -110,7 +129,8 @@ body {
   left: 16px;
 }
 
-.other-stuff {
+/*FORTH BAND*/
+.other-stuff {      /*pink sectoin*/
   flex: 1;
   background: var(--raspberry);
   overflow: hidden;
@@ -121,7 +141,7 @@ body {
   font-size: 72px;
 }
 
-.other-stuff .aaaa {
+.other-stuff .aaaa  {      /*triangle inside pink section*/
   color: #fff;
   position: relative;
   font-size: 196px;
@@ -129,7 +149,7 @@ body {
   z-index: 1;
 }
 
-.other-stuff .aaaa::before {
+.other-stuff .aaaa::before {      /*triangle in the pink section*/
   content: "";
   position: absolute;
   width: 0;
@@ -142,7 +162,7 @@ body {
   transform: rotate(20deg);
 }
 
-.other-stuff .bbbb {
+.other-stuff .bbbb {    /*food name in the pink section*/
   color: #fff;
   background: var(--ksu-purple);
   width: 400px;
@@ -157,19 +177,4 @@ body {
 
 .eeee {
   color: var(--melon);
-}
-
-.dddd {
-  background: var(--ksu-purple);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: var(--small-band-height);
-}
-
-.cccc {
-  color: #fff;
-  font-size: 60px;
-  font-family: var(--main-font);
 }

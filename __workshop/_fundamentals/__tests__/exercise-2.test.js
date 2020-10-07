@@ -1,5 +1,9 @@
 const sortByPopularity = require("../exercise-2");
 
+// I believe there is some problems in the answer
+// since when they are equal, the order doesn't really matter
+// they shouldn't be using toStrictEqual.
+
 test("Exercise 2", () => {
   expect(
     sortByPopularity({

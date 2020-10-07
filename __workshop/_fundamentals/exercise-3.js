@@ -62,6 +62,22 @@ const favoriteDessertsGroupB = {
 
 function groupByValue(obj) {
   // do something
+  let result = {};
+  let k_list = Object.keys(obj);
+  k_list.forEach(element => {   // go through the name list
+
+    // check if result contains the food
+    if(result.hasOwnProperty(obj[element])){
+      // it's atleast one element, so append it to the list
+      result[obj[element]].push(element);
+
+    }else{
+      // if it's not there, initialize one and push onself to the list
+      result[obj[element]] = [element];
+    }
+  });
+  //console.log(result);
+  return result;
 }
 
 // Verification via console.log()

@@ -21,12 +21,20 @@ test("Exercise 1", () => {
         superpowers: [],
       },
       {
+        "type": "bestFriend",
+        "name": "Mike Wheeler",
+        "age": 9,
+        "status": "frenetic",
+        "superpowers": []
+      },
+      {
         type: "girlfriend",
         name: "Eleven",
         age: 9,
         status: "angry",
         superpowers: ["telepathy", "multiverse portal sealing"],
-      },
+      }
+
     ],
   });
 });
